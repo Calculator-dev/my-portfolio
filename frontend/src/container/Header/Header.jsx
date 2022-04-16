@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Header.scss"
-import {motion} from "framer-motion"
-import profile from "../../assets/profile.png"
+import {motion} from "framer-motion"  
+import profile4 from "../../assets/profile4.png"
 import circle from "../../assets/circle.svg"
-import flutter from "../../assets/flutter.png"
+import react from "../../assets/react.png"
 import redux from "../../assets/redux.png"
 import sass from "../../assets/sass.png"
 import AppWrapp from '../../wrapper/AppWrapp'
@@ -37,8 +37,7 @@ const Header = () => {
           </div>
  
           <div className='tag-cmp app__flex'>
-          <p className='p-text'>Full Stack Developer</p>
-          <p className='p-text'>Freelancer</p>
+          <h4 className='bold-text'>Full Stack Developer</h4>
           </div>
         </div>
       </motion.div>
@@ -48,7 +47,7 @@ const Header = () => {
         transition={{duration: 0.5, delayChildren: 0.5}}
         className="app__header-img"
       >
-        <img src={profile} alt="profile_bg" />
+        <img src={profile4} alt="profile_bg" />
         <motion.img
         whileInView={{scale: [0,1]}}
         transition={{duration: 1, ease: "easeInOut"}}
@@ -64,7 +63,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[flutter, redux, sass].map((circle, index) => (
+        {[react, redux, sass].map((circle, index) => (
           <div className='circle-cmp app__flex' key={`circle-${index}`}> 
             <img src={circle} alt="circle" />
           </div>

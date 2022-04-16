@@ -4,6 +4,7 @@ import {AiFillEye, AiFillGithub} from "react-icons/ai"
 import {motion} from "framer-motion"
 import AppWrapp from "../../wrapper/AppWrapp"
 import {urlFor, client} from "../../client"
+import MotionWrap from '../../wrapper/MotionWrap'
 
 const Work = () => {
 
@@ -61,7 +62,7 @@ const Work = () => {
               <div className='app__work-img app_flex'>
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
                 <motion.div
-                  whileHover={{opcity: [0,1]}}
+                  whileHover={{opacity: [0,1]}}
                   transition={{duration: 0.25, ease: "easeInOut", staggerChildren: 0.5}}
                   className="app__work-hover app__flex"
                 >
@@ -102,4 +103,8 @@ const Work = () => {
   )
 }
 
-export default AppWrapp(Work, "work")
+export default AppWrapp(
+  MotionWrap(Work, 'app__works'),
+  'work',
+  'app__primarybg',
+);
