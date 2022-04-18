@@ -8,10 +8,10 @@ import { worksData } from './WorkData'
 
 const Work = () => {
 
-  const [filterWork, setFilterWork] = useState([])
+  const [filterWork, setFilterWork] = useState(worksData)
   const [activeFilter, setActiveFilter] = useState("All")
   const [animateCard, setAnimateCard] = useState({y: 0, opacity: 1})
-
+  console.log(filterWork);
   const handleWorkFilter = (item) => {
     setActiveFilter(item)
     setAnimateCard([{y: 100, opacity: 0}])
