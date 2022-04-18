@@ -1,20 +1,31 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import "./About.scss"
 import {motion} from "framer-motion"
-import {urlFor, client} from "../../client"
 import AppWrapp from '../../wrapper/AppWrapp'
 import MotionWrap from '../../wrapper/MotionWrap'
+import uxUiPic from "../../assets/uxui.png"
+import frontEndPic from "../../assets/frontend.png"
+import mongoDbPic from "../../assets/backend.png"
+
+const aboutss = [
+  {
+    title: "UX/UI Designer",
+    description: "1 year of experience in UI/UX Design, designing projects (research, wireframes, design, prototypes etc.). Also providing logos and banners for my projects with Adobe Photoshop and Adobe Illustrator.",
+    imgUrl: uxUiPic
+  },
+  {
+    title: "Front end Developer",
+    description: "The main are of my expertise is front end development (client side of the web). HTML5, CSS3, JS, building small and medium web apps with ReactJS, animations and creative layouts.",
+    imgUrl: frontEndPic
+  },
+  {
+    title: "Mongo DB and Node.js",
+    description: "I have been using MongoDB Atlas (No SQL Database) for my project along side with Node.js.",
+    imgUrl: mongoDbPic
+  }
+]
 
 const About = () => {
-  
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    const query = `*[_type == "abouts"]`
-
-    client.fetch(query)
-      .then((data) => setAbouts(data))
-  }, [])
   
 
   return (
@@ -25,7 +36,7 @@ const About = () => {
       Have a nice day!</p>
       </div>
         <div className='app__profiles'>
-          {abouts.map((about, index) => (
+          {aboutss.map((about, index) => (
             <motion.div
               whileInView={{opacity: 1}}
               whileHover={{scale: 1.1}}
@@ -33,7 +44,7 @@ const About = () => {
               className="app__profile-item"
               key={about.title + index}
             >
-              <img src={urlFor(about.imgUrl)} alt={about.title} />
+              <img src={about.imgUrl} alt={about.title} />
               <h2 className='bold-text' style={{marginTop: 20}}>{about.title}</h2>
               <p className='bold-text' style={{marginTop: 10}}>{about.description}</p>
             </motion.div>
