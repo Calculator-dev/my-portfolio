@@ -7,6 +7,7 @@ import MotionWrap from '../../wrapper/MotionWrap'
 import { worksData } from './WorkData'
 
 const Work = () => {
+  
 
   const [filterWork, setFilterWork] = useState(worksData)
   const [activeFilter, setActiveFilter] = useState("All")
