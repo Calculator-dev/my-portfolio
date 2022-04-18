@@ -7,7 +7,7 @@ import uxUiPic from "../../assets/uxui.png"
 import frontEndPic from "../../assets/frontend.png"
 import mongoDbPic from "../../assets/backend.png"
 
-const aboutss = [
+const abouts = [
   {
     title: "Mongo DB and Node.js",
     description: "I have been using MongoDB Atlas (No SQL Database) for my project along side with Node.js.",
@@ -36,7 +36,7 @@ const About = () => {
       Have a nice day!</p>
       </div>
         <div className='app__profiles'>
-          {aboutss.map((about, index) => (
+          {abouts.map((about, index) => (
             <motion.div
               whileInView={{opacity: 1}}
               whileHover={{scale: 1.1}}
