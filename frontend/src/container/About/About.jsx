@@ -9,9 +9,9 @@ import mongoDbPic from "../../assets/backend.png"
 
 const aboutss = [
   {
-    title: "UX/UI Designer",
-    description: "1 year of experience in UI/UX Design, designing projects (research, wireframes, design, prototypes etc.). Also providing logos and banners for my projects with Adobe Photoshop and Adobe Illustrator.",
-    imgUrl: uxUiPic
+    title: "Mongo DB and Node.js",
+    description: "I have been using MongoDB Atlas (No SQL Database) for my project along side with Node.js.",
+    imgUrl: mongoDbPic
   },
   {
     title: "Front end Developer",
@@ -19,9 +19,9 @@ const aboutss = [
     imgUrl: frontEndPic
   },
   {
-    title: "Mongo DB and Node.js",
-    description: "I have been using MongoDB Atlas (No SQL Database) for my project along side with Node.js.",
-    imgUrl: mongoDbPic
+    title: "UX/UI Designer",
+    description: "1 year of experience in UI/UX Design, designing projects (research, wireframes, design, prototypes etc.). Also providing logos and banners for my projects with Adobe Photoshop and Adobe Illustrator.",
+    imgUrl: uxUiPic
   }
 ]
 
