@@ -1,14 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import "./Work.scss"
 import {AiFillEye, AiFillGithub} from "react-icons/ai"
 import {motion} from "framer-motion"
 import AppWrapp from "../../wrapper/AppWrapp"
-import {urlFor, client} from "../../client"
 import MotionWrap from '../../wrapper/MotionWrap'
+import { worksData } from './WorkData'
 
 const Work = () => {
 
-  const [works, setWorks] = useState([])
   const [filterWork, setFilterWork] = useState([])
   const [activeFilter, setActiveFilter] = useState("All")
   const [animateCard, setAnimateCard] = useState({y: 0, opacity: 1})
@@ -21,21 +20,13 @@ const Work = () => {
       setAnimateCard([{y: 0, opacity: 1}])
 
       if(item === "All"){
-        setFilterWork(works)
+        setFilterWork(worksData)
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)))
+        setFilterWork(worksData.filter((work) => work.tags.includes(item)))
       }
     }, 500);
   }
 
-  useEffect(() => {
-    const query = '*[_type == "works"]';
-
-    client.fetch(query).then((data) => {
-      setWorks(data);
-      setFilterWork(data);
-    });
-  }, []);
   
 
   return (
@@ -60,7 +51,7 @@ const Work = () => {
           {filterWork.map((work, index) => (
             <div className='app__work-item app__flex' key={index}>
               <div className='app__work-img app_flex'>
-                <img src={urlFor(work.imgUrl)} alt={work.name} />
+                <img src={work.imgUrl} alt={work.name} />
                 <motion.div
                   whileHover={{opacity: [0,1]}}
                   transition={{duration: 0.25, ease: "easeInOut", staggerChildren: 0.5}}
@@ -90,10 +81,9 @@ const Work = () => {
               </div>
               <div className='app__work-content app__flex'>
                 <h4 className='bold-text'>{work.title}</h4>
-                <p className='p-text' style={{marginTop: 10}}>{work.description}</p>
+                <p className='p-text' style={{marginTop: 10}}>{work.desc}</p>
                 <div className='app__work-tag app__flex'>
-                  <p className='p-text'>{work.tags[0]}</p>
-
+                  <p className='p-text'>{work.tags}</p>
                 </div>
               </div>
             </div>
