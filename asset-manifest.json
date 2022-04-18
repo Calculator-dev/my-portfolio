@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.fdf80db7.css",
-    "main.js": "/my-portfolio/static/js/main.04df0119.js",
+    "main.js": "/my-portfolio/static/js/main.f5be134a.js",
+    "static/media/numberguessinggame.jpg": "/my-portfolio/static/media/numberguessinggame.f539094129b0e0ed12c9.jpg",
     "static/media/backend.png": "/my-portfolio/static/media/backend.bb2aa11b331309e5fc12.png",
     "static/media/bgIMG.png": "/my-portfolio/static/media/bgIMG.c39101e520e2997fc6d4.png",
     "static/media/bgWhite.png": "/my-portfolio/static/media/bgWhite.79658cadae50b3b16ee5.png",
     "static/media/frontend.png": "/my-portfolio/static/media/frontend.96132eb07c443a00c5ba.png",
     "static/media/uxui.png": "/my-portfolio/static/media/uxui.13e12488d416159c482a.png",
+    "static/media/pinpad.png": "/my-portfolio/static/media/pinpad.16d5a91b1f5dd4b33c29.png",
     "static/media/profile4.png": "/my-portfolio/static/media/profile4.9d994fba2dea5275dab8.png",
     "static/media/mongodb.png": "/my-portfolio/static/media/mongodb.bf8042403d8797a7ff1b.png",
     "static/media/logo.png": "/my-portfolio/static/media/logo.1889cc07fec4a271882e.png",
     "static/media/redux.png": "/my-portfolio/static/media/redux.c9be37e0fece29c624b0.png",
+    "static/media/etch-a-sketch.png": "/my-portfolio/static/media/etch-a-sketch.0e20b1a797265890fcae.png",
     "static/media/sass.png": "/my-portfolio/static/media/sass.36e863bfbcb25c109d00.png",
     "static/media/node.png": "/my-portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/mobile.png": "/my-portfolio/static/media/mobile.145d9ce0157a56f8fcd8.png",
@@ -19,10 +22,10 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/circle.svg": "/my-portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
     "main.fdf80db7.css.map": "/my-portfolio/static/css/main.fdf80db7.css.map",
-    "main.04df0119.js.map": "/my-portfolio/static/js/main.04df0119.js.map"
+    "main.f5be134a.js.map": "/my-portfolio/static/js/main.f5be134a.js.map"
   },
   "entrypoints": [
     "static/css/main.fdf80db7.css",
-    "static/js/main.04df0119.js"
+    "static/js/main.f5be134a.js"
   ]
 }
