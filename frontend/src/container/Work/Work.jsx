@@ -67,15 +67,31 @@ const Work = () => {
                   <p className='p-text'>{work.tags}</p>
                 </div>
               </div>
-              <div className='app__work-codeContent app__flex'>
-                <a href={work.projectLink} target="_blank" rel='noreferrer' >
-                <AiFillEye  style={{width: "40px", height: "40px", cursor: "pointer", marginRight: "20px", color: "black"}}  />    
-                </a>
-                <a href={work.codeLink} target="_blank" rel='noreferrer' >
-
-                  <AiFillGithub style={{width: "40px", height: "40px", color: "black"}}/>
-                </a>
-              </div>
+              <motion.div
+                  transition={{duration: 0.25, ease: "easeInOut", staggerChildren: 0.5}}
+                  style={{display: "flex"}}
+                >
+                  <a href={work.projectLink} target="_blank" rel='noreferrer' >
+                    <motion.div
+                    whileInView={{scale: [0,1]}}
+                    whileHover={{scale: [1, 0.9]}}
+                    transition={{duration: 0.75, ease: "easeInOut", staggerChildren: 0.75}}
+                    className="app__flex"
+                    >
+                      <AiFillEye style={{width: "40px", height: "40px", cursor: "pointer", marginRight: "20px", color: "black"}} />
+                    </motion.div>
+                  </a>
+                  <a href={work.codeLink} target="_blank" rel='noreferrer' >
+                    <motion.div
+                    whileInView={{scale: [0,1]}}
+                    whileHover={{scale: [1, 0.9]}}
+                    transition={{duration: 0.75, ease: "easeInOut", staggerChildren: 0.75}}
+                    className="app__flex"
+                    >
+                      <AiFillGithub style={{width: "40px", height: "40px", color: "black"}} />
+                    </motion.div>
+                  </a>
+                </motion.div>
             </div>
           ))}
         </motion.div>

@@ -44,29 +44,5 @@ export const worksData = [
         codeLink: "https://github.com/Calculator-dev/metronome",
         imgUrl: metronome,
         tags: "Web App"
-    },
-    {
-        title: "Metronome",
-        desc: "Metronome",
-        projectLink: "https://calculator-dev.github.io/metronome/",
-        codeLink: "https://github.com/Calculator-dev/metronome",
-        imgUrl: metronome,
-        tags: "Web App"
-    },
-    {
-        title: "Metronome",
-        desc: "Metronome",
-        projectLink: "https://calculator-dev.github.io/metronome/",
-        codeLink: "https://github.com/Calculator-dev/metronome",
-        imgUrl: metronome,
-        tags: "Web App"
-    },
-    {
-        title: "Metronome",
-        desc: "Metronome",
-        projectLink: "https://calculator-dev.github.io/metronome/",
-        codeLink: "https://github.com/Calculator-dev/metronome",
-        imgUrl: metronome,
-        tags: "Web App"
     }
 ]
