@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 
 const Work = () => {
   
+  const gitHub = "https://github.com/Calculator-dev";
   const [numberOfElements, setNumberOfElements] = useState(4)
   const [filterWork, setFilterWork] = useState(worksData)
   const [activeFilter, setActiveFilter] = useState("All")
@@ -94,6 +95,24 @@ const Work = () => {
                 </motion.div>
             </div>
           ))}
+          <div className="app__work-item app_flex">
+          <div className='app__work-content app__flex'>
+                <p className='p-text' style={{marginTop: 10}}>Projects are in maitenance mode, for more projects visit GitHub</p>
+                <div className='app__work-tag app__flex'>
+                  <p className='bold-text'>GitHub</p>
+                </div>
+              </div>
+          <a href={gitHub}  target="_blank" rel='noreferrer' >
+                    <motion.div
+                    whileInView={{scale: [0,1]}}
+                    whileHover={{scale: [1, 0.9]}}
+                    transition={{duration: 0.75, ease: "easeInOut", staggerChildren: 0.75}}
+                    className="app__flex"
+                    >
+                      <AiFillGithub style={{width: "40px", height: "40px", color: "black"}} />
+                    </motion.div>
+                  </a>
+          </div>
         </motion.div>
         <Button onClick={loadMore} variant="outlined">Load More</Button>
     </>

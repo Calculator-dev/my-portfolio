@@ -21,19 +21,16 @@ const SocialMedia = () => {
           <div >
             <BsInstagram />
           </div>
-
         </a>
         <a href={facebook} target="_blank" rel='noreferrer' >
           <div >
             <FaFacebook />
           </div>
-
         </a>
         <a href={gitHub} target="_blank" rel='noreferrer' >
           <div>
             <AiFillGithub />
           </div>
-
         </a>
       </div>
   )
