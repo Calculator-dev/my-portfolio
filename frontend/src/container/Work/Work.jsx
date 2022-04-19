@@ -70,10 +70,10 @@ const Work = () => {
               <div className='app__work-codeContent app__flex'>
                 <a href={work.codeLink} target="_blank" rel='noreferrer' >
 
-                <AiFillEye  style={{width: "40px", height: "40px", cursor: "pointer", marginRight: "20px", color: "black"}}  />    
+                  <AiFillGithub style={{width: "40px", height: "40px", color: "black"}}/>
                 </a>
                 <a href={work.projectLink} target="_blank" rel='noreferrer' >
-                  <AiFillGithub style={{width: "40px", height: "40px", color: "black"}}/>
+                <AiFillEye  style={{width: "40px", height: "40px", cursor: "pointer", marginRight: "20px", color: "black"}}  />    
                 </a>
               </div>
             </div>
