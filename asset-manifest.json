@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.131f44c8.css",
-    "main.js": "/my-portfolio/static/js/main.624d28d2.js",
+    "main.js": "/my-portfolio/static/js/main.f8cdb3af.js",
     "static/media/numberguessinggame.jpg": "/my-portfolio/static/media/numberguessinggame.f539094129b0e0ed12c9.jpg",
     "static/media/backend.png": "/my-portfolio/static/media/backend.bb2aa11b331309e5fc12.png",
     "static/media/bgIMG.png": "/my-portfolio/static/media/bgIMG.c39101e520e2997fc6d4.png",
@@ -23,10 +23,10 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/circle.svg": "/my-portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
     "main.131f44c8.css.map": "/my-portfolio/static/css/main.131f44c8.css.map",
-    "main.624d28d2.js.map": "/my-portfolio/static/js/main.624d28d2.js.map"
+    "main.f8cdb3af.js.map": "/my-portfolio/static/js/main.f8cdb3af.js.map"
   },
   "entrypoints": [
     "static/css/main.131f44c8.css",
-    "static/js/main.624d28d2.js"
+    "static/js/main.f8cdb3af.js"
   ]
 }
