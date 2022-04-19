@@ -4,7 +4,6 @@ import mobile from "../../assets/mobile.png"
 import emailIcon from "../../assets/email.png"
 import AppWrapp from "../../wrapper/AppWrapp"
 import MotionWrap from "../../wrapper/MotionWrap"
-import { client } from '../../client';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -19,21 +18,7 @@ const Footer = () => {
   };
 
   const handleSubmit = () => {
-    setLoading(true);
 
-    const contact = {
-      _type: 'contact',
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
-
-    client.create(contact)
-      .then(() => {
-        setLoading(false);
-        setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
   };
 
   return (

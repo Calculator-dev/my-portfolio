@@ -1,6 +1,8 @@
 import numberGuessingGame from "../../assets/numberguessinggame.jpg"
 import etchASketch from "../../assets/etch-a-sketch.png"
 import pinPad from "../../assets/pinpad.png"
+import calculator from "../../assets/calculator.png"
+import metronome from "../../assets/metronome.png"
 
 export const worksData = [
     {
@@ -25,6 +27,46 @@ export const worksData = [
         projectLink: "https://calculator-dev.github.io/pin-pad/",
         codeLink: "https://github.com/Calculator-dev/pin-pad",
         imgUrl: pinPad,
+        tags: "Web App"
+    },
+    {
+        title: "Reverse Polish Notation",
+        desc: "Reverse Polish Notation Calculator",
+        projectLink: "https://calculator-dev.github.io/reverse-polish-notation-calculator/",
+        codeLink: "https://github.com/Calculator-dev/reverse-polish-notation-calculator",
+        imgUrl: calculator,
+        tags: "Web App"
+    },
+    {
+        title: "Metronome",
+        desc: "Metronome",
+        projectLink: "https://calculator-dev.github.io/metronome/",
+        codeLink: "https://github.com/Calculator-dev/metronome",
+        imgUrl: metronome,
+        tags: "Web App"
+    },
+    {
+        title: "Metronome",
+        desc: "Metronome",
+        projectLink: "https://calculator-dev.github.io/metronome/",
+        codeLink: "https://github.com/Calculator-dev/metronome",
+        imgUrl: metronome,
+        tags: "Web App"
+    },
+    {
+        title: "Metronome",
+        desc: "Metronome",
+        projectLink: "https://calculator-dev.github.io/metronome/",
+        codeLink: "https://github.com/Calculator-dev/metronome",
+        imgUrl: metronome,
+        tags: "Web App"
+    },
+    {
+        title: "Metronome",
+        desc: "Metronome",
+        projectLink: "https://calculator-dev.github.io/metronome/",
+        codeLink: "https://github.com/Calculator-dev/metronome",
+        imgUrl: metronome,
         tags: "Web App"
     }
 ]
